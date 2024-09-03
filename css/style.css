@@ -22,6 +22,117 @@ table {
   width: 100%;
 }
 body {
-  background: #3255;
+  background: white;
   color: #333;
+}
+
+.inner {
+  width: 1200px;
+  margin: auto;
+  background: #fc9;
+  height: 700px;
+}
+
+header {
+  position: relative;
+  height: 100px;
+  background: red;
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+header h1 {
+  width: 200px;
+  height: 40px;
+}
+header h1 a {
+  display: block;
+  height: 100px;
+}
+
+nav {
+  top: 40px;
+  right: 0;
+  position: absolute;
+}
+nav > ul {
+  display: flex;
+}
+
+nav > ul > li > a {
+  display: block;
+  width: 120px;
+  background: #fff;
+  text-align: center;
+  font-weight: bold;
+  color: #ceb398;
+  padding: 10px;
+}
+nav > ul > li:hover > a {
+  background: #ceb398;
+  color: black;
+}
+.slide {
+  position: relative;
+  height: 300px;
+  background: #369;
+  overflow: hidden;
+
+}
+.slide ul {
+  top: 0;
+  left: 0;
+  height: 900px;
+  position: absolute;
+}
+.slide ul li {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+}
+.slide ul li a {
+  display: block;
+  height: 100%;
+}
+.slide ul li.s1 {
+  background: url(../img/1.jpg) no-repeat left center/cover;
+}
+.slide ul li.s2 {
+  background: url(../img/2.jpg) no-repeat left center/cover;
+}
+.slide ul li.s3 {
+  background: url(../img/3.jpg) no-repeat left center/cover;
+}
+.slide ul li p {
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  background: #ceb;
+}
+.con {
+  display: flex;
+  height: 200px;
+  background: #fc9;
+}
+.con article {
+  width: 400px;
+  height: 100%;
+}
+.con article.con1 {
+  background: pink;
+}
+.con article.con2 {
+  background: skyblue;
+}
+.con article.con3 {
+  background: blueviolet;
+}
+
+.footer {
+  height: 100px;
+  background: black;
 }
