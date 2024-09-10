@@ -37,7 +37,7 @@ body {
 header {
   position: relative;
   height: 100px;
-  background: red;
+  background: transparent;
   padding-left: 100px;
   padding-top: 30px;
 }
@@ -137,27 +137,31 @@ nav > ul > li:hover > a {
   width: 400px;
   height: 100%;
 }
-.con1 {
-}
-.con1 .tapmenu li {
-  width: 150px;
-  display: inline-block;
-  background: #fcf0ff;
-}
-.con1 .tapmenu li.on {
-  color: #fff;
-  background: #ceb398;
-}
-.con1 .tapmenu li a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  font-weight: bold;
-}
 .con .tabcon {
   background: #ceb398;
   height: 150px;
   padding: 10px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.con1 {
+  position: relative;
+}
+.con1 .tabmenu > li {
+  width: 150px;
+  display: inline-block;
+  background: #fcf0ff;
+}
+.con1 .tabmenu > li.on {
+  color: #fff;
+  background: #ceb398;
+}
+.con1 .tabmenu > li > a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
 }
 
 .notice th {
